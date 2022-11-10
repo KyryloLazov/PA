@@ -2,8 +2,8 @@ def generate_files():
     import random
     with open("files/file_a.txt", "w") as file_a:
         nums = []
-        for i in range(30): #1_800_000
-            num = random.randint(1, 100) #2_000_000
+        for i in range(1_800_000): 
+            num = random.randint(1, 2_000_000) 
             nums.append(num)
         file_a.write(" ".join([str(i) for i in nums]))
 
