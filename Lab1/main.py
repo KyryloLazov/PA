@@ -1,6 +1,6 @@
 import functions
 
-#functions.generate_files()
+functions.generate_files()
 
 counter = 1
 
@@ -9,7 +9,6 @@ while not functions.file_is_sorted():
         data = file_a.read()
 
     print(f"Ітерація #{counter}...")
-    print(data)
 
     numbers = functions.convert_to_int(data)
 
